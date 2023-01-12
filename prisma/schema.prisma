@@ -1,0 +1,48 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider          = "postgresql"
+  url               = env("DATABASE_URL")
+  shadowDatabaseUrl = env("SHADOW_DATABASE_URL")
+}
+
+model Product {
+  id           Int       @id @default(autoincrement())
+  title        String
+  price        Float
+  description  String
+  image        String
+  category_id  Int
+  profiling_id Int       @unique
+  category     Category  @relation(fields: [category_id], references: [id])
+  profiling    Profiling @relation(fields: [profiling_id], references: [id])
+}
+
+model Category {
+  id       Int       @id @default(autoincrement())
+  name     String    @unique
+  products Product[]
+}
+
+model User {
+  id           Int       @id @default(autoincrement())
+  email        String    @unique
+  name         String
+  profiling_id Int       @unique
+  profiling    Profiling @relation(fields: [profiling_id], references: [id])
+}
+
+model Profiling {
+  id        Int      @id @default(autoincrement())
+  sexe      Int      @default(5)
+  age       Int      @default(5)
+  csp       Int      @default(5)
+  balle     Int      @default(0)
+  raquette  Int      @default(0)
+  aquatique Int      @default(0)
+  ecolo     Int      @default(0)
+  product   Product?
+  user      User?
+}
