@@ -7,7 +7,6 @@
 	import ItemCard from '../ItemCard.svelte';
 
 	export let data: PageData;
-	console.log(data);
 	import 'swiper/css';
 </script>
 
