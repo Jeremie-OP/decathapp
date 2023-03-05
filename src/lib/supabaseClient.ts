@@ -1,7 +1,7 @@
 import { createClient } from '@supabase/auth-helpers-sveltekit'
-import { env } from '$env/dynamic/public'
+import { SUPABASE_URL, SUPABASE_ANON_KEY } from '$lib/Env'
 
-export const supabase = createClient(env.PUBLIC_SUPABASE_URL, env.PUBLIC_SUPABASE_ANON_KEY)
+export const supabase = createClient(SUPABASE_URL, SUPABASE_ANON_KEY)
 
 // Make a request
 const { data: todos, error } = await supabase.from('todos').select('*')
