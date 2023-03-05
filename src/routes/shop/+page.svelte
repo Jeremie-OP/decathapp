@@ -40,8 +40,6 @@
 			alt="coach"
 		/></SwiperSlide
 	>
-	<SwiperSlide>Test1</SwiperSlide>
-	<SwiperSlide>Test1</SwiperSlide>
 </Swiper>
 
 <div class="row m-1">

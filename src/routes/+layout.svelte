@@ -68,7 +68,7 @@
 		<slot />
 	</ion-content>
 
-	<div class="shadow mt-3 bg-body">
+	<div class="shadow mt-1 bg-body">
 		<BottomBar />
 	</div>
 </ion-app>

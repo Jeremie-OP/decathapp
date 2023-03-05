@@ -5,13 +5,13 @@
 <div class="nav justify-content-center">
 	<button class="btn m-0 p-0 nav-item" class:active={$page.url.pathname.startsWith('/store')}>
 		<div class="container" onclick="window.location='/magasin';">
-			<i class="material-icons">local_mall</i><br>
+			<i class="material-icons">home</i><br>
 			<span>Magasin</span>
 		</div>
 	</button>
 	<button class="btn m-0 p-0 nav-item" class:active={$page.url.pathname.startsWith('/shop')}>
 		<div class="container" onclick="window.location='/shop';">
-			<i class="material-icons">home</i><br>
+			<i class="material-icons">local_mall</i><br>
 			<span>Catalogue</span>
 		</div>
 	</button>

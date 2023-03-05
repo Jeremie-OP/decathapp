@@ -34,6 +34,12 @@
 >
 	<SwiperSlide
 		><img
+			src="https://nmvalfffrvupnkmqtnyj.supabase.co/storage/v1/object/public/img/Innovathlon.png"
+			alt="promo"
+		/></SwiperSlide
+	>
+	<SwiperSlide
+		><img
 			src="https://nmvalfffrvupnkmqtnyj.supabase.co/storage/v1/object/public/img/Decathlon21.png"
 			alt="promo"
 		/></SwiperSlide
@@ -44,8 +50,6 @@
 			alt="coach"
 		/></SwiperSlide
 	>
-	<SwiperSlide>Test1</SwiperSlide>
-	<SwiperSlide>Test1</SwiperSlide>
 </Swiper>
 
 <div>    
