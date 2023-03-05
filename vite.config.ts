@@ -5,8 +5,6 @@ const config: UserConfig = {
 	plugins: [sveltekit()],
 	build: {
 		target: 'esnext',
-		// Output Directory named "public"
-		outDir: 'public'
 	},
 	test: {
 		include: ['src/**/*.{test,spec}.{js,ts}']
