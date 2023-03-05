@@ -6,6 +6,9 @@ const config: UserConfig = {
 	build: {
 		target: 'esnext',
 	},
+	define: {
+		'process.env': process.env,
+	},
 	test: {
 		include: ['src/**/*.{test,spec}.{js,ts}']
 	}
